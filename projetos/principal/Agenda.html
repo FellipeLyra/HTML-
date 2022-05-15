@@ -8,6 +8,7 @@
     <title>Agenda</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dakrmode.css">
 
     <script src="./js/app.js" defer></script>
 
@@ -15,6 +16,13 @@
 </head>
 
 <body>
+    <input type="checkbox" class="checkbox" id="chk">
+    <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+    </label>
+
     <div class="board">
         <h3>A fazer</h3>
 
@@ -36,7 +44,7 @@
     </div>
 
     <div class="board">
-        <h3>Entregue</h3>
+        <h3>Feito</h3>
 
         <ul id="done" ondrop="drop(event, this.id)" ondragover="over(event)"></ul>
 
@@ -44,6 +52,10 @@
             <p>Adicionar tarefa</p>
         </div>
     </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
