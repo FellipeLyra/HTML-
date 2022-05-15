@@ -33,3 +33,9 @@ function addCard(elemento) {
 function removeCard(elemento) {
     document.getElementById(elemento.parentElement.id).remove();
 }
+
+const chk = document.getElementById('chk')
+
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark')
+})
